@@ -13,10 +13,10 @@ class cipher {
 		this.Nickname = cName
 
 		switch (this.Nickname) {
-			case "English":
-			case "Ordinal":
-			case "Reduced":
+/*			case "English":
+			case "Ordinal": */
 			case "Alphanumeric":
+			case "English Qaballa":
 				this.is_On = true;
 				break;
 			default:
@@ -90,7 +90,7 @@ class cipher {
 				this.rgbArr = [0, 186, 0];
 				break;
 			case "English Qaballa":
-				this.rgbArr = [226, 128, 101];
+				this.rgbArr = [255, 64, 0];
 				break;
 			case "English":
 				this.rgbArr = [255, 255, 0];

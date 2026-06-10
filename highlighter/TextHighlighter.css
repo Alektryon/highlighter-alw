@@ -145,10 +145,10 @@ table .CheckHead {
 }
 
 .English_Qaballa{
-	color: RGB(226, 128, 101);
+	color: RGB(255, 64, 0);
 }
 .English_Qaballa:hover{
-	color: RGB(240, 160, 150);
+	color: RGB(255, 124, 40);
 	text-decoration: underline;
 }
 
