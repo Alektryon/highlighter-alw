@@ -270,7 +270,10 @@ Header_Load()
 		<tbody><tr>
 			<td><textarea id="Gem_Box" rows="25" ,="" cols="60" placeholder="Drop text here" onkeyup="javascript:populate_Sums()" onmouseup="javascript:populate_Sums()"></textarea></td>
 
-			<td id="Gem_Table" valign="top" align="center"><table class="GemTable"><tbody><tr></tr><tr><td class="Reduced td_name" id="Reduced_Header"><a href="javascript:populate_Breakdown('Reduced');">Reduced</a></td></tr><tr><td class="Reduced td_number" id="Reduced_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr><tr><td class="Ordinal td_name" id="Ordinal_Header"><a href="javascript:populate_Breakdown('Ordinal');">Ordinal</a></td></tr><tr><td class="Ordinal td_number" id="Ordinal_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr><tr><td class="Jewish td_name" id="Jewish_Header"><a href="javascript:populate_Breakdown('Jewish');">Jewish</a></td></tr><tr><td class="Jewish td_number" id="Jewish_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr></tbody></table></td>
+			<td id="Gem_Table" valign="top" align="center"><table class="GemTable"><tbody><tr></tr>
+			<tr><td class="Reduced td_name" id="Reduced_Header"><a href="javascript:populate_Breakdown('Reduced');">Reduced</a></td></tr><tr><td class="Reduced td_number" id="Reduced_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr>
+			<tr><td class="Ordinal td_name" id="Ordinal_Header"><a href="javascript:populate_Breakdown('Ordinal');">Ordinal</a></td></tr><tr><td class="Ordinal td_number" id="Ordinal_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr>
+			<tr><td class="EQ td_name" id="EQ_Header"><a href="javascript:populate_Breakdown('EQ');">English Qaballa</a></td></tr><tr><td class="EQ td_number" id="EQ_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr></tbody></table></td>
 
 		</tr>
 		<tr>
@@ -280,7 +283,25 @@ Header_Load()
 			<td colspan="2" id="Break_Options"><table><tbody><tr><td class="CipherLabel" valign="top">Options:</td><td><input type="checkbox" id="Break_Box" onclick="populate_Breakdown()" value="Letter Breakdown" checked="checked">Show Equation<br><input type="checkbox" id="Letter_Box" onclick="populate_Breakdown()" value="Show Letters">Show Letters<br><input type="checkbox" id="Show_Quotes" onclick="populate_Breakdown()" value="Show Quotes">Show Quotes</td></tr></tbody></table></td>
 		</tr>
 		<tr>
-			<td colspan="2" id="Gem_Ciphers"><table class="CheckTable"><tbody><tr><td class="CipherLabel">Ciphers:<u></u></td><td class="CheckHead" style="width: 200px">Pythagorean</td><td class="CheckHead" style="width: 200px">Alphabetic</td><td class="CheckHead" style="width: 200px">Others</td></tr><tr><td></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Reduced_Box" value="Reduced" checked="checked"><font style="color: RGB(68, 114, 196)">Reduced<br><input type="checkbox" onclick="set_Ciphers()" id="S_Exception_Box" value="S Exception"><font style="color: RGB(142, 169, 219)">S Exception<br><input type="checkbox" onclick="set_Ciphers()" id="KV_Exception_Box" value="K/V Exception"><font style="color: RGB(142, 169, 219)">K/V Exception<br><input type="checkbox" onclick="set_Ciphers()" id="KSV_Exception_Box" value="K/S/V Exception"><font style="color: RGB(0, 176, 240)">K/S/V Exception<br></font></font></font></font></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Ordinal_Box" value="Ordinal" checked="checked"><font style="color: RGB(0, 153, 0)">Ordinal<br><input type="checkbox" onclick="set_Ciphers()" id="Sumerian_Box" value="Sumerian"><font style="color: RGB(169, 208, 142)">Sumerian<br><input type="checkbox" onclick="set_Ciphers()" id="Francis_Bacon_Box" value="Francis Bacon"><font style="color: RGB(146, 208, 80)">Francis Bacon<br><input type="checkbox" onclick="set_Ciphers()" id="Reverse_Ordinal_Box" value="Reverse Ordinal"><font style="color: RGB(198, 89, 17)">Reverse Ordinal<br><input type="checkbox" onclick="set_Ciphers()" id="Satanic_Box" value="Satanic"><font style="color: RGB(255, 0, 0)">Satanic<br></font></font></font></font></font></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Jewish_Box" value="Jewish" checked="checked"><font style="color: RGB(153, 102, 255)">Jewish<br><input type="checkbox" onclick="set_Ciphers()" id="English_Box" value="English"><font style="color: RGB(255, 255, 0)">English<br><input type="checkbox" onclick="set_Ciphers()" id="Septenary_Box" value="Septenary"><font style="color: RGB(255, 153, 0)">Septenary<br></font></font></font></td></tr></tbody></table></td>
+			<td colspan="2" id="Gem_Ciphers"><table class="CheckTable"><tbody><tr><td class="CipherLabel">Ciphers:<u></u></td><td class="CheckHead" style="width: 200px">Pythagorean</td><td class="CheckHead" style="width: 200px">Alphabetic</td><td class="CheckHead" style="width: 200px">Others</td></tr><tr><td></td>
+			<td class="CheckBoxes" valign="top">
+			<input type="checkbox" onclick="set_Ciphers()" id="Reduced_Box" value="Reduced" checked="checked"><font style="color: RGB(88, 125, 254)">Reduced<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="S_Exception_Box" value="S Exception"><font style="color: RGB(142, 169, 219)">S Exception<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="KV_Exception_Box" value="K/V Exception"><font style="color: RGB(142, 169, 219)">K/V Exception<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="KSV_Exception_Box" value="K/S/V Exception"><font style="color: RGB(0, 176, 240)">K/S/V Exception<br>
+			</font></font></font></font></td>
+			<td class="CheckBoxes" valign="top">
+			<input type="checkbox" onclick="set_Ciphers()" id="Ordinal_Box" value="Ordinal" checked="checked"><font style="color: RGB(0, 186, 0)">Ordinal<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="Sumerian_Box" value="Sumerian"><font style="color: RGB(169, 208, 142)">Sumerian<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="Francis_Bacon_Box" value="Francis Bacon"><font style="color: RGB(146, 208, 80)">Francis Bacon<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="Reverse_Ordinal_Box" value="Reverse Ordinal"><font style="color: RGB(198, 89, 17)">Reverse Ordinal<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="Alphanumeric_Box" value="Alphanumeric"><font style="color: RGB(190, 190, 126)">Alphanumeric<br>
+			</font></font></font></font></font></td>
+			<td class="CheckBoxes" valign="top">
+			<input type="checkbox" onclick="set_Ciphers()" id="EQ_Box" value="EQ"><font style="color: RGB(153, 102, 255)">English Qaballa<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="English_Box" value="English"><font style="color: RGB(255, 255, 0)">English<br>
+			<input type="checkbox" onclick="set_Ciphers()" id="Septenary_Box" value="Septenary"><font style="color: RGB(255, 153, 0)">Septenary<br>
+			</font></font></font></td></tr></tbody></table></td>
 		</tr>
 	</tbody></table>
 	</div>

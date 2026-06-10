@@ -2,7 +2,7 @@ var sStr
 var lastCipher = ""
 var cipherGroup
 var cipherNames = ["Reduced", "S Exception", "K/V Exception", "K/S/V Exception", 
-	"Ordinal", "Sumerian", "Francis Bacon", "Reverse Ordinal", "Jewish", "English", "Septenary", "Satanic"]
+	"Ordinal", "Sumerian", "Francis Bacon", "Reverse Ordinal", "English Qaballa", "English", "Septenary", "Alphanumeric"]
 
 class cipher {
 
@@ -13,9 +13,10 @@ class cipher {
 		this.Nickname = cName
 
 		switch (this.Nickname) {
+			case "English":
 			case "Ordinal":
 			case "Reduced":
-			case "Satanic":
+			case "Alphanumeric":
 				this.is_On = true;
 				break;
 			default:
@@ -31,15 +32,15 @@ class cipher {
 				this.gemClass = "Pythagorean";
 				break;
 			case "Ordinal":
-			case "Satanic":
+			case "Alphanumeric":
 			case "Francis Bacon":
 			case "Sumerian":
 			case "Reverse Ordinal":
 				this.valArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
 				this.gemClass = "Alphabetic";
 				break;
-			case "Jewish":
-				this.valArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 600, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 700, 900, 300, 400, 500];
+			case "English Qaballa":
+				this.valArr = [1,20,13,6,25,18,11,4,23,16,9,2,21,14,7,26,19,12,5,24,17,10,3,22,15,8];
 				break;
 			case "English":
 				this.valArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400, 500, 600, 700, 800];
@@ -72,24 +73,24 @@ class cipher {
 				};
 				this.rgbArr = [169, 208, 142];
 				break;
-			case "Satanic":
+			case "Alphanumeric":
 				for (x = 0; x < this.valArr.length; x++) {
-					this.valArr[x] += 35
+					this.valArr[x] += 9
 				};
-				this.rgbArr = [255, 0, 0];
+				this.rgbArr = [190, 190, 126];
 				break;
 			case "Reverse Ordinal":
 				this.valArr.sort(function(a, b){return b-a});
 				this.rgbArr = [198, 89, 17];
 				break;
 			case "Reduced":
-				this.rgbArr = [68, 114, 196];
+				this.rgbArr = [88, 125, 254];
 				break;
 			case "Ordinal":
-				this.rgbArr = [0, 153, 0];
+				this.rgbArr = [0, 186, 0];
 				break;
-			case "Jewish":
-				this.rgbArr = [153, 102, 255];
+			case "English Qaballa":
+				this.rgbArr = [226, 128, 101];
 				break;
 			case "English":
 				this.rgbArr = [255, 255, 0];
@@ -612,7 +613,7 @@ function populate_Breakdown(impCipher = lastCipher) {
 
 function Open_Props(impNum) {
 	if (impNum > 0 && impNum < 10000000) {
-		window.open("https://gematrinator.com/number-properties?number=" + impNum, "Properties of " + impNum, "height=480,width=750")
+		window.open("https://gematrinator.com/number-properties?number=" + impNum, "Properties of " + impNum, "height=666,width=555")
 	}
 }
 

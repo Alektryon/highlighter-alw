@@ -136,19 +136,19 @@ table .CheckHead {
 	text-decoration: underline;
 }
 
-.Satanic{
-	color: RGB(255, 0, 0);
+.Alphanumeric{
+	color: RGB(190, 190, 126);
 }
-.Satanic:hover{
-	color: RGB(255, 117, 117);
+.Alphanumeric:hover{
+	color: RGB(216, 216, 171);
 	text-decoration: underline;
 }
 
-.Jewish{
-	color: RGB(153, 102, 255);
+.English_Qaballa{
+	color: RGB(226, 128, 101);
 }
-.Jewish:hover{
-	color: RGB(170, 135, 255);
+.English_Qaballa:hover{
+	color: RGB(240, 160, 150);
 	text-decoration: underline;
 }
 
