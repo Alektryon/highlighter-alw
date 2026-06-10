@@ -6,3 +6,4 @@ http://www.gematrinator.com/calculator/texthighlighter.php
 
 — Removed "Satanic" cipher;<BR>
 — Added "Alphanumeric" (0 through Z=35).
+— Added "English Qaballa" (ALW Cipher).
